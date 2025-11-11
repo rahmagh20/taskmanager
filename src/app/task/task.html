@@ -1,0 +1,12 @@
+
+<div>
+<h3 [class.done]="isDone">{{ taskTitle }}</h3>
+@if (isDone){
+    <p>Tasck completed</p>
+}@else{
+    <p>This task is not done yet</p>
+}
+<button (click)="markAsDone()">Change status</button>
+<button (click)="removetask()">remove task</button>
+
+</div>
